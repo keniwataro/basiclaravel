@@ -1,5 +1,5 @@
 # 素のlaravelファイル
-2024年2月20日時点の素のlaravelファイル
+2024年2月20日時点の素のlaravelファイル<br>
 phpmyadminの設定は完了済
 
 ## git clone後に行う作業
