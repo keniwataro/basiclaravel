@@ -3,12 +3,12 @@
 phpmyadminの設定は完了済
 
 ## git clone後に行う作業
-1 下記のコマンドを実行
+1 下記のコマンドを実行<br>
 mkdir -p storage/framework/cache/data/<br>
 mkdir -p storage/framework/app/cache<br>
 mkdir -p storage/framework/sessions<br>
 mkdir -p storage/framework/views<br>
- 2 下記のコマンドを実行
+ 2 下記のコマンドを実行<br>
 docker run --rm \<br>
     -u "$(id -u):$(id -g)" \<br>
     -v $(pwd):/var/www/html \<br>
