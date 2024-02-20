@@ -3,6 +3,8 @@
 phpmyadminの設定は完了済
 
 ## git clone後に行う作業
+0 バージョン管理しない場合は.gitフォルダを削除<br>
+対象のフォルダに移動して rm -rf ./.git <br>
 1 下記のコマンドを実行<br>
 mkdir -p storage/framework/cache/data/<br>
 mkdir -p storage/framework/app/cache<br>
