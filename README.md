@@ -19,11 +19,11 @@ phpmyadminの設定は完了済
  　DB_DATABASE=ファイル名で <br>
  　DB_USERNAME=自分で決める <br>
  　DB_PASSWORD=自分で決める <br>
- 5 "権限変更（必要な人のみ） <br>
+ 5 sail up <br>
+ 6 "権限変更（必要な人のみ） <br>
  　sail root-shell <br>
  　chown sail:sail -R . <br>
  　exit <br>
- 6 sail up <br>
  7 npm install <br>
  8 npm run build <br>
  9 sail artisan key:generate <br>
