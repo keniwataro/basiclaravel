@@ -2,30 +2,30 @@
 phpmyadminの設定は完了済
 
 ## git clone後に行う作業
-1 mkdir -p storage/framework/cache/data/
- 　mkdir -p storage/framework/app/cache
- 　mkdir -p storage/framework/sessions
- 　mkdir -p storage/framework/views
- 2 docker run --rm
- 　-u ""$(id -u):$(id -g)""
- 　-v $(pwd):/var/www/html
- 　-w /var/www/html
- 　laravelsail/php82-composer:latest
- 　composer install --ignore-platform-reqs
- 3 cp .env.example .env
- 4 DB_CONNECTION=mysql
- 　DB_HOST=mysql
- 　DB_PORT=3306
- 　DB_DATABASE=ファイル名で
- 　DB_USERNAME=自分で決める
- 　DB_PASSWORD=自分で決める
- 5 "権限変更（必要な人のみ）
- 　sail root-shell
- 　chown sail:sail -R .
- 　exit
- 6 sail up
- 7 npm install
- 8 npm run build
- 9 sail artisan key:generate
- 10 sail artisan migrate
- 11 localhost と localhost:8080 を表示できるか確認
+1 mkdir -p storage/framework/cache/data/ <br>
+ 　mkdir -p storage/framework/app/cache <br>
+ 　mkdir -p storage/framework/sessions <br>
+ 　mkdir -p storage/framework/views <br>
+ 2 docker run --rm <br>
+ 　-u ""$(id -u):$(id -g)"" <br>
+ 　-v $(pwd):/var/www/html <br>
+ 　-w /var/www/html <br>
+ 　laravelsail/php82-composer:latest <br>
+ 　composer install --ignore-platform-reqs <br>
+ 3 cp .env.example .env <br>
+ 4 DB_CONNECTION=mysql <br>
+ 　DB_HOST=mysql <br>
+ 　DB_PORT=3306 <br>
+ 　DB_DATABASE=ファイル名で <br>
+ 　DB_USERNAME=自分で決める <br>
+ 　DB_PASSWORD=自分で決める <br>
+ 5 "権限変更（必要な人のみ） <br>
+ 　sail root-shell <br>
+ 　chown sail:sail -R . <br>
+ 　exit <br>
+ 6 sail up <br>
+ 7 npm install <br>
+ 8 npm run build <br>
+ 9 sail artisan key:generate <br>
+ 10 sail artisan migrate <br>
+ 11 localhost と localhost:8080 を表示できるか確認 <br>
