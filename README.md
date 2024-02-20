@@ -1,6 +1,6 @@
 # 素のlaravelファイル
 - phpmyadminの設定は完了済
-- 
+
 ## git clone後に行う作業
 - 
 - 1 mkdir -p storage/framework/cache/data/
