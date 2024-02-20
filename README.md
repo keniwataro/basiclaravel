@@ -30,4 +30,3 @@
 - 9 sail artisan key:generate
 - 10 sail artisan migrate
 - 11 localhost と localhost:8080 を表示できるか確認
-- 
