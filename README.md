@@ -3,16 +3,18 @@
 phpmyadminの設定は完了済
 
 ## git clone後に行う作業
-1 mkdir -p storage/framework/cache/data/ <br>
- 　mkdir -p storage/framework/app/cache <br>
- 　mkdir -p storage/framework/sessions <br>
- 　mkdir -p storage/framework/views <br>
- 2 docker run --rm <br>
- 　-u ""$(id -u):$(id -g)"" <br>
- 　-v $(pwd):/var/www/html <br>
- 　-w /var/www/html <br>
- 　laravelsail/php82-composer:latest <br>
- 　composer install --ignore-platform-reqs <br>
+1 下記のコマンドを実行
+mkdir -p storage/framework/cache/data/<br>
+mkdir -p storage/framework/app/cache<br>
+mkdir -p storage/framework/sessions<br>
+mkdir -p storage/framework/views<br>
+ 2 下記のコマンドを実行
+docker run --rm \<br>
+    -u "$(id -u):$(id -g)" \<br>
+    -v $(pwd):/var/www/html \<br>
+    -w /var/www/html \<br>
+    laravelsail/php82-composer:latest \<br>
+    composer install --ignore-platform-reqs<br>
  3 cp .env.example .env <br>
  4 DB_CONNECTION=mysql <br>
  　DB_HOST=mysql <br>
