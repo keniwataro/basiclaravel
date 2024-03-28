@@ -25,8 +25,11 @@ docker run --rm \ <br>
  　DB_USERNAME=自分で決める <br>
  　DB_PASSWORD=自分で決める <br>
  5 sail up <br>
- **※vendor/binファイルが見つからないでエラーになる場合はcomposer update**<br>
- 　**して２の手順を実行するとsail upできると思う**<br>
+ **※vendor/binファイルが見つからないでエラーになる場合は下記の手順を実行**<br>
+ 　**composer update**
+   **sudo apt-get update**
+   **sudo apt-get install php-xml**
+ 　**その後２の手順を実行するとsail upできるようになる**<br>
  6 "権限変更（必要な人のみ） <br>
  　sail root-shell <br>
  　chown sail:sail -R . <br>
