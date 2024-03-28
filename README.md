@@ -25,6 +25,8 @@ docker run --rm \ <br>
  　DB_USERNAME=自分で決める <br>
  　DB_PASSWORD=自分で決める <br>
  5 sail up <br>
+ **※vendor/binファイルが見つからないでエラーになる場合はcomposer update**<br>
+ 　**して２の手順を実行するとsail upできると思う**<br>
  6 "権限変更（必要な人のみ） <br>
  　sail root-shell <br>
  　chown sail:sail -R . <br>
